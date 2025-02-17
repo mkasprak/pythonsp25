@@ -12,8 +12,14 @@
     Example: 5 kg * 2.20462 = 11.0231 lb
 
 '''
-c = 2.20462
-kilo = 150
-pound = kilo * c
+conversion_rate = 2.20462
 
-print(f"{kilo} kilograms = {pound:.1f} pounds")
+kilo_1 = 150
+kilo_2 = 200
+
+
+pound_1 = kilo_1 * conversion_rate
+pound_2 = kilo_2 * conversion_rate
+
+print(f"{kilo_1} kilograms = {pound_1:.1f} pounds")
+print(f"{kilo_2} kilograms = {pound_2:.1f} pounds")
