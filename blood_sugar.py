@@ -34,4 +34,4 @@ for item in range(len(blood_sugar_with_times)):
     total += blood_sugar_with_times[item][1]
 
 average = total / len(blood_sugar_with_times)
-print(f"Your average blood sugar today was: {average:,.1f}")
+print(f"Your average blood sugar today was: {average:.1f}")
