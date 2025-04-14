@@ -13,32 +13,32 @@ class Student:
     # Getter and Setter for first_name
     def get_first_name(self):
         return self.__first_name
-    
+
     def get_last_name(self):
         return self.__last_name
-        
+
     def get_student_id(self):
         return self.__student_id
-    
+
     def get_grade_level(self):
         return self.__grade_level
 
     def set_first_name(self, value):
         self.__first_name = value
-    
+
     def set_last_name(self, value):
         self.__last_name = value
 
     def set_student_id(self, value):
         self.__student_id = value
-    
+
     def set_grade_level(self, value):
         self.__grade_level = value
 
     # Method to print student details
     def print_student_details(self):
         print("Student Details:", vars(self))
-    
+
     # Method to print basic info about the student
     def print_info(self):
         print(self.__first_name + " " + self.__last_name)
@@ -46,12 +46,13 @@ class Student:
         print(self.__grade_level)
 
 
-
 def check_property(obj, property_name):
     # check for first name
-    print(f"Has a {property_name} method: ", hasattr(obj, 'property_name'))
+    print(f"Has a {property_name} method: ", hasattr(obj, property_name))
 
 # Main function to demonstrate usage of the Student class
+
+
 def main():
     # Creating an instance of Student
     # ducktor_quacks = Student("Meri", "Quacksalot", '009234', "Super Senior")
@@ -63,7 +64,7 @@ def main():
     # print("\n\n\n")
     # ducktor_quacks.set_grade_level("Ducktorate")
     # ducktor_quacks.print_info()
-# Calling the main function
+    # Calling the main function
 
     student1 = Student("Buffy", "Sommers", "12345")
     student1.print_info()
@@ -72,13 +73,11 @@ def main():
     student2 = Student("Willow", "Rosenberg", "12346", "Sophmore")
     student2.print_info()
 
-
     print(student1.get_first_name() + " " + student1.get_last_name())
     print(student1.school_name)
     print(student1.get_first_name())
 
     check_property(student1, "get_first_name")
 
-    
 
 main()
