@@ -79,5 +79,7 @@ def main():
 
     check_property(student1, "get_first_name")
 
+    print(student1.__dict__)
+
 
 main()
