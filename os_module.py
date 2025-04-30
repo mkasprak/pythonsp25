@@ -7,3 +7,4 @@ def main():
     os.mkdir('ducks/rubber')
 
 main()
+
